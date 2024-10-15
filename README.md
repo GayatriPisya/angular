@@ -39,5 +39,5 @@ Once Angular CLI is installed, follow these steps to create a new Angular projec
 5. Open a browser and navigate to `http://localhost:4200/` to view your app.
 
 # Standalone 
-standalone: true: The component can be used without a module. It takes care of everything itself.
-standalone: false: The component must be part of a module. It depends on the module for its setup.
+ standalone: true: The component can be used without a module. It takes care of everything itself.<br>
+ standalone: false: The component must be part of a module. It depends on the module for its setup.
