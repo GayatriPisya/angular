@@ -8,7 +8,7 @@ Node.js is required for running Angular projects and using npm (Node Package Man
 ## 2. Angular CLI
 Angular CLI is a command-line interface for Angular development. 
 
-- Install Angular CLI globally using the following command:
+Install Angular CLI globally using the following command:
   
   ```bash
   npm install -g @angular/cli
