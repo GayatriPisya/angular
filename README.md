@@ -1,27 +1,32 @@
 # Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
+## 1. Node.js
+Node.js is required for running Angular projects and using npm (Node Package Manager) to install dependencies.
 
-## Development server
+- Download and install Node.js from [nodejs.org](https://nodejs.org).
+  
+## 2. Angular CLI
+Angular CLI is a command-line interface for Angular development. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Install Angular CLI globally using the following command:
+  
+  ```bash
+  npm install -g @angular/cli
 
-## Code scaffolding
+## Creating a New Angular Project with Angular CLI
+Once Angular CLI is installed, follow these steps to create a new Angular project:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Create a new Angular project by running the following command in your terminal:
+```bash
+ng new my-angular-app
 
-## Build
+Follow the prompts to set up your project (e.g., choose whether to include routing, select a CSS preprocessor).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Navigate into the project folder:
+```bash
+cd my-angular-app
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Run the application:
+```bash
+ng serve
+Open a browser and navigate to http://localhost:4200/ to view your app.
