@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>Check Even Numbers</h2>
+  <div class="input-group">
+    <input type="number" [(ngModel)]="number1" (ngModelChange)="checkEvenNumbers()" placeholder="Enter first number" />
+    <input type="number" [(ngModel)]="number2" (ngModelChange)="checkEvenNumbers()" placeholder="Enter second number" />
+  </div>
+  
+  <div *ngIf="showEvenButton">
+    <button class="even-button">Even Numbers!</button>
+  </div>
+  
+  <p *ngIf="message">{{ message }}</p>
+</div>
