@@ -1,1 +1,28 @@
-<p>student-details works!</p>
+<div class="container">
+    <h2>Select Student Roll Number</h2>
+    <select (change)="selectStudent($event)" class="roll-dropdown">
+      <option value="" disabled selected>Select a roll number</option>
+      <option *ngFor="let student of students" [value]="student.rollNumber">
+        {{ student.rollNumber }}
+      </option>
+    </select>
+  
+    <div *ngIf="selectedStudent" class="student-details">
+      <h3>Student Details:</h3>
+      <table>
+        <tr>
+          <th>Roll Number</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Course</th>
+        </tr>
+        <tr>
+          <td>{{ selectedStudent.rollNumber }}</td>
+          <td>{{ selectedStudent.name }}</td>
+          <td>{{ selectedStudent.age }}</td>
+          <td>{{ selectedStudent.course }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+ 

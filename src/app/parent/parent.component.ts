@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./parent.component.scss'],
 })
 export class ParentComponent {
-  parentMessage: string = 'Parent COmponent';
+  parentMessage: string = 'Parent Component';
   messageFromChild: string = '';
 
   receiveMessage(event: string) {
