@@ -15,6 +15,7 @@ import { CustomerDetailsComponent } from './customer-details/customer-details.co
 import { CheckfunctionComponent } from './checkfunction/checkfunction.component';
 import { ToggleTextComponent } from './toggle-text/toggle-text.component';
 import { MyComponent } from './my-component/my-component.component';
+import { MenuCardComponent } from './menu-card/menu-card.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MyComponent } from './my-component/my-component.component';
     CustomerDetailsComponent,
     CheckfunctionComponent,
     ToggleTextComponent,
-    MyComponent
+    MyComponent,
+    MenuCardComponent
   ],
   imports: [
     BrowserModule,

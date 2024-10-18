@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Select a Language</h2>
+    
+    <label for="languageDropdown">Choose a language:</label>
+    <select id="languageDropdown" (change)="onLanguageChange($event)">
+      <option value="">Select</option>
+      <option *ngFor="let language of codingLanguages" [value]="language">{{ language }}</option>
+    </select>
+  
+    <div class="card" *ngIf="selectedLanguage">
+      <h3>{{ selectedLanguage }} Card</h3>
+      <p>{{ languageDetails[selectedLanguage] }}</p>
+    </div>
+  </div>
+  
