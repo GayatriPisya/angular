@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Data Binding</h2>
+  
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" [(ngModel)]="userName" (input)="updateCard()" placeholder="Your Name" />
+  
+    <button (click)="toggleCardVisibility()">Card Visibility</button>
+  
+    <div class="card" *ngIf="isCardVisible">
+      <h3>{{ cardTitle }}</h3> 
+      <img [src]="cardImage" alt="Card Image" />  
+      <p>{{ userName ? 'Hello, ' + userName + '! This is your card.' : 'This is a default welcome card.' }}</p>
+    </div>
+  </div>

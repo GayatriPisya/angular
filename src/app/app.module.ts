@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common'; 
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 import { CheckfunctionComponent } from './checkfunction/checkfunction.component';
 import { ToggleTextComponent } from './toggle-text/toggle-text.component';
+import { MyComponent } from './my-component/my-component.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import { ToggleTextComponent } from './toggle-text/toggle-text.component';
     CustomerListComponent,
     CustomerDetailsComponent,
     CheckfunctionComponent,
-    ToggleTextComponent
+    ToggleTextComponent,
+    MyComponent
   ],
   imports: [
     BrowserModule,
     FormsModule, 
+    CommonModule,
     AppRoutingModule
   ],
   providers: [
