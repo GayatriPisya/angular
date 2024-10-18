@@ -1,0 +1,14 @@
+.role-container {
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+  }
+  
+  .role-container h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin: 0;
+  }

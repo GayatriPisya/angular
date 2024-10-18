@@ -1,0 +1,17 @@
+<div class="role-container">
+    @if (role === 1) {
+      <h1 [ngStyle]="{'color': 'green'}">Admin</h1>
+    } @else if (role === 2) {
+      <h1 [ngStyle]="{'color': 'blue'}">Faculty</h1>
+    } @else if (role === 3) {
+      <h1 [ngStyle]="{'color': 'orange'}">Student</h1>
+    } @else if (role === 4) {
+      <h1 [ngStyle]="{'color': 'purple'}">Employee</h1>
+    } @else {
+      <h1 [ngStyle]="{'color': 'red'}">Try Again</h1>
+    }
+  </div>
+
+  <div [ngStyle]="{'background-color': 'lightblue'}">
+    <h2>Background-colour</h2>
+  </div>

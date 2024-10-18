@@ -1,0 +1,29 @@
+.container {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  .toggle-button {
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(16, 174, 50);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .toggle-button:hover {
+    background-color: rgb(0, 139, 88);
+  }
+  
+  p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

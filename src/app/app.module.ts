@@ -11,6 +11,8 @@ import { ChildComponent } from './child/child.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
+import { CheckfunctionComponent } from './checkfunction/checkfunction.component';
+import { ToggleTextComponent } from './toggle-text/toggle-text.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { CustomerDetailsComponent } from './customer-details/customer-details.co
     ChildComponent,
     StudentListComponent,
     CustomerListComponent,
-    CustomerDetailsComponent
+    CustomerDetailsComponent,
+    CheckfunctionComponent,
+    ToggleTextComponent
   ],
   imports: [
     BrowserModule,
