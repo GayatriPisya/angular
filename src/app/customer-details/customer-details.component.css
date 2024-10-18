@@ -1,68 +1,44 @@
-.details-container {
-    margin-top: 20px;
-    padding: 20px;
-    border: 2px solid #494545;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    max-width: 500px;
-    margin: 0 auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .details-container h3 {
-    margin-bottom: 20px;
-    font-size: 20px;
-    color: #000000;
+h3 {
     text-align: center;
-  }
-  
-  .details-container label {
-    display: block;
+    margin-top: 50px;
+    font-size: 34px;
     font-weight: bold;
-    margin: 5px;
-    color: #000000;
+    color: #333;
   }
-  
-  .details-container input {
-    width: 100%;
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+input {
     padding: 10px;
-    margin: 15px;
-    border: 1px solid #ccc;
+    margin: 5px 0;
+    font-size: 26px;
     border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 14px;
-  }
-  
-  .details-container button {
+    border: 2px solid #ccc;
     width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    max-width: 300px;
   }
-  
-  
-  .alert {
-    color: #4CAF50;
-    font-size: 14px;
+div {
     text-align: center;
-    margin-top: 15px;
-  }
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
   
-  .details-container fieldset {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .details-container legend {
+    border: #9d8c8c 2px solid;
+    width: 500px;
     font-size: 18px;
     color: #333;
-    font-weight: bold;
-    margin-bottom: 10px;
   }
-  
+button {
+    padding: 8px 12px;
+    background-color: #265228e7;
+    color: white;
+    cursor: pointer;
+  }

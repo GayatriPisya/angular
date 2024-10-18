@@ -6,14 +6,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./customer-details.component.css']
 })
 export class CustomerDetailsComponent {
-  @Input() customer: any;  // Receive the customer from the parent using @Input
-  @Output() updateCustomer = new EventEmitter<any>();  // Emit the update event to the parent using @Output
+  @Input() customer: any;
+  @Output() updateCustomer = new EventEmitter<any>();
 
   onUpdate() {
-    if (this.customer.name && this.customer.city && this.customer.state && this.customer.country) {
-      this.updateCustomer.emit(this.customer);  // Emit the updated customer back to the parent
-    } else {
-      alert('Please fill all fields');
-    }
+    this.updateCustomer.emit(this.customer);  
   }
 }

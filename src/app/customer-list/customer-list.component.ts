@@ -1,52 +1,35 @@
 import { Component } from '@angular/core';
 
-// Define the Customer interface outside the component class
-interface Customer {
-  id?: number;  // Optional id for new customers
-  name: string;
-  address: string;
-  city: string;
-  state: string;
-  country: string;
-}
-
 @Component({
   selector: 'app-customer-list',
   templateUrl: './customer-list.component.html',
   styleUrls: ['./customer-list.component.css']
 })
 export class CustomerListComponent {
-  // Define the type for the customers array
-  customers: Customer[] = [];  // Empty array of type Customer[]
+  customers = [
+    { id: 1, name: 'Rahul Dravid', address: '', city: 'Bangalore', state: 'Karnataka', country: 'India' },
+    { id: 2, name: 'Sachin Tendulkar', address: '', city: 'Mumbai', state: 'Maharashtra', country: 'India' },
+    { id: 3, name: 'Saurav Ganguly', address: '', city: 'Kolkata', state: 'West Bengal', country: 'India' },
+    { id: 4, name: 'Mahendra Singh Dhoni', address: '', city: 'Ranchi', state: 'Bihar', country: 'India' },
+    { id: 5, name: 'Virat Kohli', address: '', city: 'Delhi', state: 'Delhi', country: 'India' }
+  ];
 
-  // Define the selectedCustomer using the Customer type
-  selectedCustomer: Customer = { id: undefined, name: '', address: '', city: '', state: '', country: '' };
+  selectedCustomer: any = null;
 
-  // Method to handle the edit action
-  onEdit(customer: Customer) {
-    this.selectedCustomer = { ...customer };  // Make a copy of the selected customer
+  onEdit(customer: any) {
+    this.selectedCustomer = { ...customer };  // Create a copy to avoid direct mutation
   }
 
-  // Method to handle adding a new customer or updating an existing one
-  onUpdate(updatedCustomer: Customer) {
-    if (updatedCustomer.id) {
-      // Update existing customer
-      const index = this.customers.findIndex(c => c.id === updatedCustomer.id);
-      if (index !== -1) {
-        this.customers[index] = updatedCustomer;
-        alert(`Customer updated: ${JSON.stringify(updatedCustomer)}`);
-      }
-    } else {
-      // Add new customer
-      updatedCustomer.id = this.customers.length + 1;  // Assign a new ID
-      this.customers.unshift(updatedCustomer);  // Add new customer at the top
-      alert(`Customer added: ${JSON.stringify(updatedCustomer)}`);
+  onUpdate(updatedCustomer: any) {
+    const index = this.customers.findIndex(c => c.id === updatedCustomer.id);
+    if (index !== -1) {
+      this.customers[index] = { ...updatedCustomer };  
+      alert(`Customer updated: ${JSON.stringify(updatedCustomer)}`);
     }
-    this.resetForm();
   }
 
-  // Reset the form to allow for new entries
-  resetForm() {
-    this.selectedCustomer = { id: undefined, name: '', address: '', city: '', state: '', country: '' };
+  onDelete(customerId: number) {
+    this.customers = this.customers.filter(c => c.id !== customerId);
+    alert(`Customer with ID ${customerId} has been deleted`);
   }
 }
