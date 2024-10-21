@@ -19,6 +19,7 @@ import { MenuCardComponent } from './menu-card/menu-card.component';
 import { ViewChildComponent } from './view-child/view-child.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BasicArithmeticOperationsComponent } from './basic-arithmetic-operations/basic-arithmetic-operations.component';
+import { CourseCardComponent } from './course-card/course-card.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { BasicArithmeticOperationsComponent } from './basic-arithmetic-operation
     MenuCardComponent,
     ViewChildComponent,
     NavbarComponent,
-    BasicArithmeticOperationsComponent
+    BasicArithmeticOperationsComponent,
+    CourseCardComponent
   ],
   imports: [
     BrowserModule,
