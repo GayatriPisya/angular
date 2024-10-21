@@ -18,6 +18,7 @@ import { MyComponent } from './my-component/my-component.component';
 import { MenuCardComponent } from './menu-card/menu-card.component';
 import { ViewChildComponent } from './view-child/view-child.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { BasicArithmeticOperationsComponent } from './basic-arithmetic-operations/basic-arithmetic-operations.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     MyComponent,
     MenuCardComponent,
     ViewChildComponent,
-    NavbarComponent
+    NavbarComponent,
+    BasicArithmeticOperationsComponent
   ],
   imports: [
     BrowserModule,

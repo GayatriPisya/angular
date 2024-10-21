@@ -4,8 +4,10 @@ import { LoginButtonFunctionComponent } from './login-button-function/login-butt
 import { NumberCheckComponent } from './number-check/number-check.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { BasicArithmeticOperationsComponent } from './basic-arithmetic-operations/basic-arithmetic-operations.component';
 
 const routes: Routes = [
+  { path: 'operations', component: BasicArithmeticOperationsComponent },
   { path: 'login', component: LoginButtonFunctionComponent },
   { path: 'number', component: NumberCheckComponent },
   { path: 'student', component: StudentDetailsComponent },

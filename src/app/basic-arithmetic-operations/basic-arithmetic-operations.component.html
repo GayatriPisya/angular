@@ -1,0 +1,38 @@
+<div class="calculator-container">
+    <h1>Basic Calculator</h1>
+  
+    <div>
+      <label for="number1">Enter 1st Number:</label>
+      <input
+        type="number"
+        id="number1"
+        (input)="onNumber1Change($event)"
+      />
+    </div>
+  
+    <div>
+      <label for="number2">Enter 2nd Number:</label>
+      <input
+        type="number"
+        id="number2"
+        (input)="onNumber2Change($event)"
+      />
+    </div>
+    <div class="buttons">
+      <button (click)="calculate('add')">
+        <i class="fas fa-plus"></i>
+      </button>
+      <button (click)="calculate('sub')">
+        <i class="fas fa-minus"></i> 
+      </button>
+      <button (click)="calculate('mul')">
+        <i class="fas fa-times"></i> 
+      </button>
+      <button (click)="calculate('div')">
+        <i class="fas fa-divide"></i> 
+      </button>
+    </div>
+  
+    <h2>Result: {{ result }}</h2>
+  </div>
+  
