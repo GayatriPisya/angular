@@ -1,0 +1,53 @@
+.navbar {
+    margin-top: 50px;
+    background-color: #f8f9fa; /* Light grey background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    color: #5a5a5a;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .nav-link.active {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,..."); /* Custom icon can be added here */
+  }
+  
+  .dropdown-menu {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .form-control {
+    border-radius: 20px;
+    padding: 5px 15px;
+  }
+  
+  .btn-outline-success {
+    border-radius: 20px;
+  }
+  

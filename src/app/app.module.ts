@@ -17,6 +17,7 @@ import { ToggleTextComponent } from './toggle-text/toggle-text.component';
 import { MyComponent } from './my-component/my-component.component';
 import { MenuCardComponent } from './menu-card/menu-card.component';
 import { ViewChildComponent } from './view-child/view-child.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ViewChildComponent } from './view-child/view-child.component';
     ToggleTextComponent,
     MyComponent,
     MenuCardComponent,
-    ViewChildComponent
+    ViewChildComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
