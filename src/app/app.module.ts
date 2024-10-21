@@ -20,6 +20,7 @@ import { ViewChildComponent } from './view-child/view-child.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BasicArithmeticOperationsComponent } from './basic-arithmetic-operations/basic-arithmetic-operations.component';
 import { CourseCardComponent } from './course-card/course-card.component';
+import { SignalExampleComponent } from './signal-example/signal-example.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { CourseCardComponent } from './course-card/course-card.component';
     ViewChildComponent,
     NavbarComponent,
     BasicArithmeticOperationsComponent,
-    CourseCardComponent
+    CourseCardComponent,
+    SignalExampleComponent
   ],
   imports: [
     BrowserModule,

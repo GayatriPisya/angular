@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Data Binding with Signals</h2>
+  
+    <label for="name">Enter your name:</label>
+    <input
+      type="text"
+      id="name"
+      (input)="updateUserName($event)" 
+      placeholder="Your Name"
+    />
+  
+    <p>Hello, {{ userName() }}!</p> 
+  </div>
+  
