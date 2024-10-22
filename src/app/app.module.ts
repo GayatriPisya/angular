@@ -21,6 +21,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BasicArithmeticOperationsComponent } from './basic-arithmetic-operations/basic-arithmetic-operations.component';
 import { CourseCardComponent } from './course-card/course-card.component';
 import { SignalExampleComponent } from './signal-example/signal-example.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { SignalExampleComponent } from './signal-example/signal-example.componen
     NavbarComponent,
     BasicArithmeticOperationsComponent,
     CourseCardComponent,
-    SignalExampleComponent
+    SignalExampleComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 // import { StudentDetailsComponent } from './student-details/student-details.component';
 // import { NavbarComponent } from './navbar/navbar.component';
 // import { BasicArithmeticOperationsComponent } from './basic-arithmetic-operations/basic-arithmetic-operations.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   // { path: 'operations', component: BasicArithmeticOperationsComponent },
@@ -12,7 +13,8 @@ const routes: Routes = [
   // { path: 'number', component: NumberCheckComponent },
   // { path: 'student', component: StudentDetailsComponent },
   // { path: 'navbar', component: NavbarComponent },
-  // { path: '', redirectTo: '/login', pathMatch: 'full' } 
+  { path: 'home', component: HomeComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' } 
 ];
 
 @NgModule({
