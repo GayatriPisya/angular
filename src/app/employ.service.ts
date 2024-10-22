@@ -5,7 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class EmployService {
   constructor() { }
-
   getEmployList() {
     return [
       { id: 1, firstname: 'Tulugu', lastname: 'Babu', email: 'tulugukishorebabu@gmail.com' },
