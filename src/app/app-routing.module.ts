@@ -7,15 +7,17 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BasicArithmeticOperationsComponent } from './basic-arithmetic-operations/basic-arithmetic-operations.component';
 import { HomeComponent } from './home/home.component';
 import { EmployListComponent } from './employ-list/employ-list.component';
+import { LoginFormComponent } from './login-form/login-form.component';
 
 const routes: Routes = [
   { path: 'operations', component: BasicArithmeticOperationsComponent },
-  { path: 'login', component: LoginButtonFunctionComponent },
+  // { path: 'login', component: LoginButtonFunctionComponent },
   { path: 'number', component: NumberCheckComponent },
   { path: 'student', component: StudentDetailsComponent },
   { path: 'navbar', component: NavbarComponent },
   { path: 'home', component: HomeComponent },
   { path: 'employ-list', component: EmployListComponent },
+  { path: 'login', component: LoginFormComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' } 
 ];
 

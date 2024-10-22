@@ -23,6 +23,7 @@ import { CourseCardComponent } from './course-card/course-card.component';
 import { SignalExampleComponent } from './signal-example/signal-example.component';
 import { HomeComponent } from './home/home.component';
 import { EmployListComponent } from './employ-list/employ-list.component';
+import { LoginFormComponent } from './login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { EmployListComponent } from './employ-list/employ-list.component';
     CourseCardComponent,
     SignalExampleComponent,
     HomeComponent,
-    EmployListComponent
+    EmployListComponent,
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,
