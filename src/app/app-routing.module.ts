@@ -6,6 +6,7 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
 import { NavbarComponent } from './navbar/navbar.component';
 import { BasicArithmeticOperationsComponent } from './basic-arithmetic-operations/basic-arithmetic-operations.component';
 import { HomeComponent } from './home/home.component';
+import { EmployListComponent } from './employ-list/employ-list.component';
 
 const routes: Routes = [
   { path: 'operations', component: BasicArithmeticOperationsComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'student', component: StudentDetailsComponent },
   { path: 'navbar', component: NavbarComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'employ-list', component: EmployListComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' } 
 ];
 

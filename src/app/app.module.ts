@@ -22,6 +22,7 @@ import { BasicArithmeticOperationsComponent } from './basic-arithmetic-operation
 import { CourseCardComponent } from './course-card/course-card.component';
 import { SignalExampleComponent } from './signal-example/signal-example.component';
 import { HomeComponent } from './home/home.component';
+import { EmployListComponent } from './employ-list/employ-list.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { HomeComponent } from './home/home.component';
     BasicArithmeticOperationsComponent,
     CourseCardComponent,
     SignalExampleComponent,
-    HomeComponent
+    HomeComponent,
+    EmployListComponent
   ],
   imports: [
     BrowserModule,
