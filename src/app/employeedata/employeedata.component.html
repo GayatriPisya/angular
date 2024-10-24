@@ -1,0 +1,31 @@
+<div class="container">
+    <h2 class="title">Employee List</h2>
+    <table class="employee-table">
+      <thead>
+        <tr>
+          <th>Employee ID</th>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.empId }}</td>
+          <td>{{ employee.empName }}</td>
+          <td>{{ employee.empEmail }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h3 class="title">Add New Employee</h3>
+    <form class="employee-form" (submit)="addEmployee()">
+      <div class="form-group">
+        <input [(ngModel)]="newEmployee.empName" name="empName" placeholder="Name" required class="input-field" />
+      </div>
+      <div class="form-group">
+        <input [(ngModel)]="newEmployee.empEmail" name="empEmail" placeholder="Email" required class="input-field" />
+      </div>
+      <button type="submit" class="submit-button">Add Employee</button>
+    </form>
+  </div>
+  

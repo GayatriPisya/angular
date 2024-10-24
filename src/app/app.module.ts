@@ -24,6 +24,9 @@ import { SignalExampleComponent } from './signal-example/signal-example.componen
 import { HomeComponent } from './home/home.component';
 import { EmployListComponent } from './employ-list/employ-list.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { EmployeedataComponent } from './employeedata/employeedata.component';
+import { EmployeeService } from './employee.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -47,15 +50,17 @@ import { LoginFormComponent } from './login-form/login-form.component';
     SignalExampleComponent,
     HomeComponent,
     EmployListComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    EmployeedataComponent
   ],
   imports: [
     BrowserModule,
     FormsModule, 
     CommonModule,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [
+  providers: [EmployeeService,
     provideClientHydration()
   ],
   bootstrap: [AppComponent]

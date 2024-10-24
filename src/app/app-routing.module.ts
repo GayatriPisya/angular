@@ -8,10 +8,12 @@ import { BasicArithmeticOperationsComponent } from './basic-arithmetic-operation
 import { HomeComponent } from './home/home.component';
 import { EmployListComponent } from './employ-list/employ-list.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { EmployeedataComponent } from './employeedata/employeedata.component';
 
 const routes: Routes = [
   { path: 'operations', component: BasicArithmeticOperationsComponent },
   // { path: 'login', component: LoginButtonFunctionComponent },
+  { path: 'data', component: EmployeedataComponent },
   { path: 'number', component: NumberCheckComponent },
   { path: 'student', component: StudentDetailsComponent },
   { path: 'navbar', component: NavbarComponent },
