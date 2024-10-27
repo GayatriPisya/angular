@@ -152,3 +152,16 @@ Once Angular CLI is installed, follow these steps to create a new Angular projec
   - Internationalization (i18n) setup
   - Accessibility best practices
 
+
+## Recommended Textbooks and Resources
+
+- **Documentation:** [Angular Documentation](https://angular.io/)
+- **Books:**
+  - *Angular Up & Running* by Shyam Seshadri
+  - *Pro Angular* by Adam Freeman
+- **Online Courses:** Angular courses on Udemy, Coursera, Pluralsight
+- **Tools:** Visual Studio Code, Angular CLI, Postman
+
+--- 
+
+Happy coding and good luck on your Angular journey!
