@@ -1,5 +1,7 @@
 # Angular
+Welcome to the **Angular Course Repository**! This repository includes resources, modules, and objectives for an in-depth Angular course. You'll progressively learn core Angular concepts, work on practical labs, and complete a comprehensive project that covers advanced features, optimization, and deployment.
 
+---
 ## 1. Node.js
 Node.js is required for running Angular projects and using npm (Node Package Manager) to install dependencies.
 
