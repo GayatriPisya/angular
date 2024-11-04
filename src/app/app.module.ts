@@ -27,6 +27,8 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { EmployeedataComponent } from './employeedata/employeedata.component';
 import { EmployeeService } from './employee.service';
 import { HttpClientModule } from '@angular/common/http';
+import { StudentManagementComponent } from './student-management/student-management.component';
+import { ItemListComponent } from './item-list/item-list.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     EmployListComponent,
     LoginFormComponent,
-    EmployeedataComponent
+    EmployeedataComponent,
+    StudentManagementComponent,
+    ItemListComponent
   ],
   imports: [
     BrowserModule,

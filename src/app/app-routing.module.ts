@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { EmployListComponent } from './employ-list/employ-list.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { EmployeedataComponent } from './employeedata/employeedata.component';
+import { ItemListComponent } from './item-list/item-list.component';
 
 const routes: Routes = [
   { path: 'operations', component: BasicArithmeticOperationsComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'employ-list', component: EmployListComponent },
   { path: 'login', component: LoginFormComponent },
+  { path: 'list', component: ItemListComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' } 
 ];
 
